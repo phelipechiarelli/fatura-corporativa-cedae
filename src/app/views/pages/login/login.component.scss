@@ -1,0 +1,186 @@
+// Variáveis
+
+$corFundo60vw: #333333;
+$corFundo40vw: #696969;
+
+// Estilos
+
+.bg-fatura-corporativa {
+    position: relative;
+	  background-image: url('./../../../../assets/img/bg-fatura-corporativa.jpg');
+	  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -29rem ;	
+    background-attachment: fixed;    
+    overflow: auto;	
+    float: left;    
+}
+
+.bg-login {
+  position: relative;
+  background-image: url('./../../../../assets/img/abstract_bg2.png');
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-attachment: local;    
+  overflow: auto;	
+  float: right;    
+}
+
+.bg-fc-titulo {
+  background-color: rgba($color: 	#333366	, $alpha: 0.8);
+  height: 222px;
+
+}
+
+div,
+p {
+    font-family: Ubuntu , sans-serif;
+
+    #titulo {
+        font-size: 50px;
+    }
+}
+
+span > p {
+    margin: 11px 4px !important;
+}
+
+#login {
+    color:#FFC559;
+}
+
+.viewport-60w {
+  width: 60vw;
+  height: 100%;
+  background-color: $corFundo60vw;
+  display: inline-block;
+  margin: 0rem;
+
+}
+
+.viewport-40w {
+  background-color: $corFundo40vw;
+  width: 40vw;
+  height: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  float: right;
+}
+
+.logo-cedae {
+  height: 40px;
+  width: auto;
+  float: right;
+}
+
+.fatura-consolidada-titulo {
+    height: 120px;
+    width: auto;
+    float: right;
+    padding-right: 10px;
+    margin-top: 3rem;
+  }
+
+div .card,
+div .card-header,
+div .card-body{
+    background-color: rgba($color: 	#333366	, $alpha: .3);  
+    border-radius: 0%;
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+button, input, div {
+    border-radius: 0%;
+}
+
+input > .form-control {
+    width: 60% !important;
+    border: solid #B0C4DE;
+    
+}
+
+#inpSenha, #inpUsuario {
+  background-clip: border-box !important;
+}
+
+.etiqueta-erro {
+    display: inline-block;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0;
+    height: 35px;    
+    color: #fff;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-animation-name: etiqueta-vermelha;
+    animation-name: etiqueta-vermelha;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/* Wobble Horizontal */
+@-webkit-keyframes etiqueta-vermelha {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes etiqueta-vermelha {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+
+

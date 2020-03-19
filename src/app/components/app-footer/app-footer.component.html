@@ -1,0 +1,13 @@
+<footer class="app-footer">
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left">
+    <img src="assets/img/cedae_branco.png" class="logo-cedae img-responsive">
+  </div>
+  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+    <div class="input-group d-flex align-items-center flex-row-reverse">
+      <span class="text-white">Versão: {{ versaoVO.versao }}</span>
+      <h4>
+        <span class="mr-4" [ngClass]="mapperSituacao(versaoVO.ambiente)"> {{ambiente}}</span>
+      </h4>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,203 @@
+<section class="d-inline">
+  <div class="viewport-60w bg-fatura-corporativa">
+    <section class="d-flex align-items-center h-100">
+      <div class="w-100 bg-fc-titulo">
+        <div class=""><img class="fatura-consolidada-titulo" src="../../../../assets/img/logo_branco.png" alt="CEDAE"></div>
+      </div>     
+    </section>    
+
+    
+  </div>
+  <div class="viewport-40w bg-login">
+    <section class="d-flex align-items-center h-100">
+      <div class="card w-100 border-0">
+        <div class="card-header">
+          <p id="login" class="text-left h1 font-weight-bold p-0 m-0">login</p>
+        </div>
+        <div class="card-body">
+          <form class="form-group" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <div id="loginInputs" class="input-group mb-2">
+              <div class="input-group-addon">
+                <i class="icon-user"></i>
+              </div>
+              <input id="inpUsuario" formControlName="chave" [(ngModel)]="usuario.chave" type="text"
+                class="form-control" placeholder="Informe o usuário"
+                [ngClass]="{'is-valid':loginForm.controls.chave.touched && loginForm.controls.chave.valid,'is-invalid':loginForm.controls.chave.touched && loginForm.controls.chave.invalid}"
+                (input)="loginForm.patchValue({chave: $event.target.value.toUpperCase()})">
+                <span *ngIf="loginForm.controls.chave.touched && loginForm.controls.chave.invalid"
+                 id="usuarioObrigatorio" class="ml-2 etiqueta-erro float-right">                 
+                 <p><i id="iconExclamationTriangle" class="fa fa-exclamation-triangle text-warning pr-1"></i><strong>O nome do usuário é obrigatório</strong></p></span>
+            </div>
+
+
+
+            <div id="loginInputs" class="input-group mb-2">
+
+              <div class="input-group-addon">
+                <i class="icon-lock"></i>
+              </div>
+
+              <input id="inpSenha" formControlName="senha" [(ngModel)]="usuario.senha" [type]="typoSenha"
+                class="form-control" placeholder="Informe a senha"
+                [ngClass]="{'is-valid':loginForm.controls.senha.touched && loginForm.controls.senha.valid, 'is-invalid':loginForm.controls.senha.touched && loginForm.controls.senha.invalid}">
+               
+
+              <div class="input-group-addon p-0">
+
+                <button id="btnExibirOcultarSenha" type="button" class="btn btn-light border"
+                  (click)="exibirOcultarSenha()">
+                  <span [ngSwitch]="typoSenha">
+                    <i id="ExibirSenha" *ngSwitchCase="'password'" class="fa fa-eye fa-lg" title="Exibir a senha."></i>
+                    <i id="OcultarSenha" *ngSwitchCase="'text'" class="fa fa-eye-slash fa-lg"
+                      title="Ocultar a senha."></i>
+                  </span>
+                </button>
+
+              </div>
+
+              <span *ngIf="loginForm.controls.senha.touched && loginForm.controls.senha.invalid"
+              id="usuarioObrigatorio" class="ml-2 etiqueta-erro float-right">
+              <p><i id="iconExclamationTriangle" class="fa fa-exclamation-triangle text-warning pr-1"></i><strong>A senha é obrigatória</strong></p>
+              </span>
+
+            </div>
+
+            <div [hidden]="isCapsOn === false">
+              <span class="etiqueta-erro mx-auto">              
+              <p class="text-card text-center">
+                <i id="iconExclamationTriangle" class="fa fa-exclamation-triangle text-warning pr-1"></i>
+                <strong id="capsLockAtivada">A tecla "Caps Lock" está ativada</strong>
+              </p>
+            </span>
+            </div>
+
+            <div class="row mt-1">
+              <div class="col-md-12">
+                <div class="form-inline">
+                  <div class="col-md-6 pl-0">
+                    <button id="btnOnSubmit" type="submit" class="btn btn-lg btn-primary" [disabled]="loginForm.invalid">
+                      Entrar</button>                      
+                  </div>             
+                  <div class="col-md-6 pr-0">
+                    <img class="logo-cedae" src="../../../../assets/img/cedae_branco.png" alt="">
+                  </div>    
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="fixed-bottom text-right">
+        <p>
+          <small class="text-white">Versão: {{versaoVO.versao}}</small> <small class="m-2 p-2 text-white"
+            [ngClass]="mapperSituacao(versaoVO.ambiente)">{{ambiente}}</small>
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+</section>
+
+<!-- <div class="fundo--login">
+
+  <div class="app flex-row align-items-center">
+
+    <div class="container">
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+          <div class="card-group">
+
+            <div class="card p-4 container-login">
+
+              <div class="card-body">
+
+                <div class="text-center mb-3">
+                  <img src="assets/img/logo_metrus.svg" class="logo-metrus">
+                </div>
+
+                <form class="form-group" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+                  <div class="input-group mb-2">
+                    <div class="input-group-addon">
+                      <i class="icon-user"></i>
+                    </div>
+                    <input id="inpUsuario" formControlName="chave" [(ngModel)]="usuario.chave" type="text" class="form-control"
+                      placeholder="Informe o usuário" [ngClass]="{'is-valid':loginForm.controls.chave.touched && loginForm.controls.chave.valid,'is-invalid':loginForm.controls.chave.touched && loginForm.controls.chave.invalid}"
+                      (input)="loginForm.patchValue({chave: $event.target.value.toUpperCase()})">
+                  </div>
+
+                  <div *ngIf="loginForm.controls.chave.touched && loginForm.controls.chave.invalid" class="text-danger mb-2">
+                    <em id="usuarioObrigatorio">Usuário é obrigatório</em>
+                  </div>
+
+                  <div class="input-group mb-2">
+
+                    <div class="input-group-addon">
+                      <i class="icon-lock"></i>
+                    </div>
+
+                    <input id="inpSenha" formControlName="senha" [(ngModel)]="usuario.senha" [type]="typoSenha" class="form-control"
+                      placeholder="Informe a senha" [ngClass]="{'is-valid':loginForm.controls.senha.touched && loginForm.controls.senha.valid, 'is-invalid':loginForm.controls.senha.touched && loginForm.controls.senha.invalid}">
+
+                    <div class="input-group-addon p-0">
+
+                      <button id="btnExibirOcultarSenha" type="button" class="btn btn-light border" (click)="exibirOcultarSenha()">
+                        <span [ngSwitch]="typoSenha">
+                          <i id="ExibirSenha" *ngSwitchCase="'password'" class="fa fa-eye fa-lg" title="Exibir a senha."></i>
+                          <i id="OcultarSenha" *ngSwitchCase="'text'" class="fa fa-eye-slash fa-lg" title="Ocultar a senha."></i>
+                        </span>
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                  <div *ngIf="loginForm.controls.senha.touched && loginForm.controls.senha.invalid" class="text-danger mb-2">
+                    <em id="senhaObrigatoria">Senha é obrigatória</em>
+                  </div>
+                  <span [hidden]="isCapsOn === false">
+                    <p class="text-card text-center animated fadeIn">
+                      <i id="iconExclamationTriangle"class="fa fa-exclamation-triangle text-warning" style="color:orangered"></i><strong id="capsLockAtivada"class="text-danger">
+                        Tecla Caps Lock ativada</strong>
+                    </p>
+                  </span>
+                  <div class="row mb-3">
+                    <div class="col-md-12">
+                      <div class="form-inline justify-content-between">
+                        <div>
+                          <button id="btnOnSubmit" type="submit" class="btn btn-success icon-forward" [disabled]="loginForm.invalid">
+                            Entrar</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center mb-0">
+                    <img src="assets/img/cedae.png" class="logo-cedae">
+                  </div>
+
+                  <p class="card-text text-center">
+                    <small class="text-muted">Versão: {{versaoVO.versao}}</small>
+                  </p>
+
+                  <p class="card-text text-center">
+                    <span style="font-size: 14px" [ngClass]="mapperSituacao(versaoVO.ambiente)">{{ambiente}}</span>
+                  </p>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

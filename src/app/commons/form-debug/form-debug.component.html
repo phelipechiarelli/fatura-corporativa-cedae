@@ -1,0 +1,21 @@
+
+<div style="margin-top:20px" class="alert alert-danger alert-dismissible fade show" role="alert"  *ngIf="form">
+        Detalhes do Form
+        <pre>
+                Form Válid {{form.valid}}
+              
+                </pre>
+              
+                <pre>
+                    Form Submetido {{form.submitted}}
+                  
+                  </pre>
+              
+                <pre>
+                      Form Valores {{form.value | json}}
+                    
+          </pre>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+ </div>

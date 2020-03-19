@@ -1,0 +1,9 @@
+.thumbnail:hover {
+    transition: all 0.25s ease-in;
+    transform:scale(0.95);
+}
+
+.thumbnail {
+    transition: all 0.25s ease-in;
+    transform:scale(1);
+}

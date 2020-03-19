@@ -1,0 +1,49 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="221.056mm" height="104.604mm" viewBox="0 -0.00285853 221.056 104.61" version="1.1" id="svg5582" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="noFoto.svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"><rect id="svgEditorBackground" x="0" y="0" width="221.05599975585938" height="104.60399627685547" style="fill:none;stroke:none;"/>
+  <defs id="defs5576">
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="49" y1="94.25" x2="49" y2="13.3295" gradientTransform="matrix(1,0,0,-1,0,104)">
+      <stop offset="0" style="stop-color:#00EFD1" id="stop4"/>
+      <stop offset="1" style="stop-color:#00ACEA" id="stop6"/>
+    </linearGradient>
+    <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="50.5" y1="94.25" x2="50.5" y2="13.3295" gradientTransform="matrix(1,0,0,-1,0,104)">
+      <stop offset="0" style="stop-color:#00EFD1" id="stop11"/>
+      <stop offset="1" style="stop-color:#00ACEA" id="stop13"/>
+    </linearGradient>
+    <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="42.6427" y1="94.25" x2="42.6427" y2="13.3295" gradientTransform="matrix(1,0,0,-1,0,104)">
+      <stop offset="0" style="stop-color:#00EFD1" id="stop18"/>
+      <stop offset="1" style="stop-color:#00ACEA" id="stop20"/>
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="1" inkscape:cx="372.28113" inkscape:cy="103.55887" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1920" inkscape:window-height="1018" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1"/>
+  <metadata id="metadata5579">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Camada 1" inkscape:groupmode="layer" id="layer1" transform="translate(-37.698146,-11.59574)">
+    
+    <g id="g194" transform="matrix(0.77631142,0,0,0.77631142,9.7969505,23.196419)">
+      <g transform="matrix(1.3823129,0,0,1.3823129,110.58325,-33.504379)" id="g25">
+        <linearGradient gradientTransform="matrix(1,0,0,-1,0,104)" y2="13.3295" x2="49" y1="94.25" x1="49" gradientUnits="userSpaceOnUse" id="linearGradient55">
+          <stop id="stop51" style="stop-color:#00EFD1" offset="0"/>
+          <stop id="stop53" style="stop-color:#00ACEA" offset="1"/>
+        </linearGradient>
+        <path inkscape:connector-curvature="0" style="fill:url(#SVGID_1_)" id="path9" d="M 92.5,28.1 H 80.7 v -9.7 c 0,-1.7 -1.3,-3 -3,-3 H 5.5 c -1.7,0 -3,1.3 -3,3 v 56.7 c 0,1.7 1.3,3 3,3 h 10.7 v 9.6 c 0,1.7 1.3,3 3,3 h 73.3 c 1.7,0 3,-1.3 3,-3 V 31.1 c 0,-1.7 -1.3,-3 -3,-3 z M 8.5,21.4 H 74.7 V 72.1 H 8.5 Z m 81,63.2 H 22.2 V 78 h 55.6 c 1.7,0 3,-1.3 3,-3 0,-0.3 0,-0.5 -0.1,-0.8 V 34.1 h 8.8 c 0,0 0,50.5 0,50.5 z" class="st0"/>
+        <linearGradient gradientTransform="matrix(1,0,0,-1,0,104)" y2="13.3295" x2="50.5" y1="94.25" x1="50.5" gradientUnits="userSpaceOnUse" id="linearGradient62">
+          <stop id="stop58" style="stop-color:#00EFD1" offset="0"/>
+          <stop id="stop60" style="stop-color:#00ACEA" offset="1"/>
+        </linearGradient>
+        <path inkscape:connector-curvature="0" style="fill:url(#SVGID_2_)" id="path16" d="m 50.5,42.9 c 4.9,0 8.9,-4 8.9,-8.9 0,-4.9 -4,-8.9 -8.9,-8.9 -4.9,0 -8.9,4 -8.9,8.9 0,4.9 4,8.9 8.9,8.9 z m 0,-11.8 c 1.6,0 2.9,1.3 2.9,2.9 0,1.6 -1.3,2.9 -2.9,2.9 -1.6,0 -2.9,-1.3 -2.9,-2.9 0,-1.6 1.3,-2.9 2.9,-2.9 z" class="st1"/>
+        <linearGradient gradientTransform="matrix(1,0,0,-1,0,104)" y2="13.3295" x2="42.6427" y1="94.25" x1="42.6427" gradientUnits="userSpaceOnUse" id="linearGradient69">
+          <stop id="stop65" style="stop-color:#00EFD1" offset="0"/>
+          <stop id="stop67" style="stop-color:#00ACEA" offset="1"/>
+        </linearGradient>
+        <path inkscape:connector-curvature="0" style="fill:url(#SVGID_3_)" id="path23" d="M 58.6,47.8 C 58,47.1 57.2,46.7 56.3,46.7 v 0 c -0.9,0 -1.8,0.4 -2.3,1.1 L 49,54 37.3,37 c -0.6,-0.8 -1.5,-1.3 -2.5,-1.3 v 0 c -1,0 -1.9,0.5 -2.5,1.3 L 14.8,62.6 c -0.6,0.9 -0.7,2.1 -0.2,3.1 0.5,1 1.5,1.6 2.7,1.6 H 44.6 52.4 68 c 1.2,0 2.2,-0.7 2.7,-1.7 0.5,-1 0.4,-2.3 -0.4,-3.2 z m -14,13.5 H 23 L 34.8,44 46.7,61.3 Z m 9.4,0 -1.4,-2.1 3.8,-4.7 5.4,6.8 z" class="st2"/>
+      </g>
+    </g>
+  </g>
+  <g inkscape:groupmode="layer" id="layer2" inkscape:label="Camada 2" transform="translate(-58.700017,-1.0352461)"/>
+</svg>
